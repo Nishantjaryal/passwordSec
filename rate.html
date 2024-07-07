@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to determine attack rate?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./bubble.js" defer></script>
+
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-message user-message" id="expandQuestion">
+            <div class="chat-bubble user-bubble">How to determine attack rate?</div>
+          </div>
+          <div class="chat-message assistant-message" id="expandAnswer">
+            <div class="chat-bubble assistant-bubble">
+              <h3>Password Attempt Rates</h1>
+              <p>
+                The value of <strong>R</strong> (the rate of password attempts per
+                second) for a normal computer can vary significantly depending on
+                the hardware and the specific attack method used. Here's a rough
+                estimate based on different types of computers and attack methods:
+              </p>
+    
+              <h4>1. Average Personal Computer:</h4>
+              <ul>
+                <li>
+                  <strong>CPU-based brute force attack:</strong>
+                  <ul>
+                    <li>
+                      Older or lower-end CPUs: 1,000 - 10,000 attempts per second
+                    </li>
+                    <li>Modern CPUs: 100,000 - 1,000,000 attempts per second</li>
+                  </ul>
+                </li>
+              </ul>
+    
+              <h4>2. High-Performance Gaming PC:</h4>
+              <ul>
+                <li>
+                  <strong>GPU-based brute force attack:</strong>
+                  <ul>
+                    <li>
+                      Using a mid-range GPU (e.g., NVIDIA GTX 1660): 10,000,000 -
+                      100,000,000 attempts per second
+                    </li>
+                    <li>
+                      Using a high-end GPU (e.g., NVIDIA RTX 3080): 100,000,000 -
+                      1,000,000,000 attempts per second
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+    
+              <h3>3. Specialized Hardware or Botnets:</h3>
+              <ul>
+                <li>
+                  <strong>High-end GPUs or FPGA/ASIC-based systems:</strong>
+                  <ul>
+                    <li>
+                      Specialized hardware like FPGAs or ASICs can achieve
+                      1,000,000,000 - 10,000,000,000 attempts per second or more.
+                    </li>
+                    <li>
+                      Large botnets comprising thousands of compromised machines can
+                      collectively achieve very high rates of password attempts.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+    
+              <h3>4. Online Attacks:</h3>
+              <ul>
+                <li>
+                  <strong>Limited by network latency and server defenses:</strong>
+                  <ul>
+                    <li>
+                      Typically much slower due to rate limiting and lockout
+                      mechanisms: 1 - 1,000 attempts per second
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+    
+              <p>
+                For an average modern personal computer with a decent CPU, a rough
+                estimate would be around 100,000 to 1,000,000 attempts per second.
+                However, using a powerful GPU can increase this rate significantly.
+              </p>
+
+
+            </div>
+
+            <br>
+            <br>
+            <a href="/" class="Link">Back</a>
+
+    </div>
+</body>
+</html>

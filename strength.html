@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  How to identify strength of password?
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./bubble.js" defer></script>
+</head>
+<body>
+
+
+    
+    <div class="chat-container">
+        <div class="chat-message user-message" id="expandQuestion">
+          <div class="chat-bubble user-bubble">
+            How to identify strength of password?
+          </div>
+        </div>
+        <div class="chat-message assistant-message" id="expandAnswer">
+          <div class="chat-bubble assistant-bubble">
+            Identifying the strength of a password typically involves evaluating
+            several criteria. A common method is to use a scoring matrix or
+            algorithm that assesses various attributes of the password. Here are
+            some factors commonly considered:
+            <br /><br />
+            1. <strong>Length:</strong><br />
+            - Longer passwords are generally stronger. A typical recommendation is
+            at least 12-16 characters.
+            <br /><br />
+            2. <strong>Character Variety:</strong><br />
+            - Use of uppercase letters (A-Z)<br />
+            - Use of lowercase letters (a-z)<br />
+            - Use of digits (0-9)<br />
+            - Use of special characters (e.g., !, @, #, $, etc.)
+            <br /><br />
+            3. <strong>Avoidance of Common Patterns:</strong><br />
+            - Avoiding easily guessable sequences like "123456", "password",
+            "abcdef", etc.<br />
+            - Avoiding common substitutions (e.g., "P@ssw0rd" instead of
+            "Password")
+            <br /><br />
+            4. <strong>Entropy:</strong><br />
+            - Measure of unpredictability. Higher entropy indicates a stronger
+            password.
+            <br /><br />
+            5. <strong>Dictionary Words:</strong><br />
+            - Avoiding entire dictionary words or common phrases.
+            <br /><br />
+            6. <strong>Repetition and Predictable Patterns:</strong><br />
+            - Avoiding repeated characters or predictable patterns like "aaa111"
+            or "abcd1234".
+            <br /><br />
+            A basic scoring matrix could look like this:
+            <br /><br />
+            <table cellpadding="5" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Criteria</th>
+                  <th>Points (Example)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Length: 8-11 characters</td>
+                  <td>1 point</td>
+                </tr>
+                <tr>
+                  <td>Length: 12-15 characters</td>
+                  <td>2 points</td>
+                </tr>
+                <tr>
+                  <td>Length: 16+ characters</td>
+                  <td>3 points</td>
+                </tr>
+                <tr>
+                  <td>Contains lowercase</td>
+                  <td>1 point</td>
+                </tr>
+                <tr>
+                  <td>Contains uppercase</td>
+                  <td>1 point</td>
+                </tr>
+                <tr>
+                  <td>Contains digits</td>
+                  <td>1 point</td>
+                </tr>
+                <tr>
+                  <td>Contains special characters</td>
+                  <td>1 point</td>
+                </tr>
+                <tr>
+                  <td>No common words/patterns</td>
+                  <td>1 point</td>
+                </tr>
+                <tr>
+                  <td>High entropy</td>
+                  <td>2 points</td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            A password could be classified based on the total points:
+            <br /><br />
+            - <strong>Weak:</strong> 0-3 points<br />
+            - <strong>Moderate:</strong> 4-6 points<br />
+            - <strong>Strong:</strong> 7-9 points<br />
+            - <strong>Very Strong:</strong> 10+ points <br /><br />
+            For more sophisticated assessments, tools like zxcvbn (an open-source
+            password strength estimator) can be used. These tools analyze password
+            strength more comprehensively by considering a larger variety of
+            factors and utilizing advanced algorithms.
+          </div>
+
+        </div>
+
+                  <a href="/" class="Link">Back</a>
+
+        
+      </div>
+</body>
+</html>

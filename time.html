@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>              How to calculate time to break password?
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./bubble.js" defer></script>
+
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-message user-message" id="expandQuestion">
+            <div class="chat-bubble user-bubble">
+              How to calculate time to break password?
+            </div>
+          </div>
+          <div class="chat-message assistant-message" id="expandAnswer">
+            <div class="chat-bubble assistant-bubble">
+              To estimate the time required to break a password, you need to
+              consider the method used by attackers, such as brute force attacks.
+              Here’s a simplified approach to calculate the time required to break a
+              password:
+              <br /><br />
+              <strong>1. Determine the Search Space:</strong><br />
+              The search space is the total number of possible combinations for a
+              given password. It can be calculated using the formula:<br />
+              N = C^L <br />
+              where:<br />
+              N = Total number of possible combinations<br />
+              C = Number of possible characters in the character set<br />
+              L= Length of the password
+              <br /><br />
+              <strong>2. Character Set Size:</strong><br />
+              The size of the character set depends on what characters are used in
+              the password:<br />
+              - Lowercase letters (a-z): 26<br />
+              - Uppercase letters (A-Z): 26<br />
+              - Digits (0-9): 10<br />
+              - Special characters (e.g., !, @, #, $): typically around 32 (varies
+              based on allowed characters)
+              <br /><br />
+              For example, if a password uses lowercase and uppercase letters,
+              digits, and special characters, the character set size is:<br />
+              C = 26 + 26 + 10 + 32 = 94
+              <br /><br />
+              <strong>3. Compute the Search Space:</strong><br />
+              For a password of length (L) :<br />
+              N = 94^L
+              <br /><br />
+    
+              <strong>4. Brute Force Attack Speed:</strong> <br />
+              Assume the attacker can make R attempts per second. The time 𝑇 to
+              exhaustively search the entire space is:<br />
+              𝑇 = 𝑁/𝑅 ​<br />
+              <br />
+    
+              <strong>5. Lets perform a case</strong>
+              <p>
+                let L be 10, L is length of password, assuming the attacker can make
+                1 billion attempts per second.
+              </p>
+              𝑁 = 94^10 ≈ 5.39 × 10^19 Seconds <br />
+              𝑅 = 10^9 attacks per second
+              <br />
+    
+              <p>
+                In Years time will be equal to: 1,710 years <br />
+                𝑇 = 1,710 years
+              </p>
+    
+              <br /><br />
+              <strong>Notes:</strong><br />
+              - <strong>Password Strength:</strong> Stronger passwords with higher
+              character variety and length increase the search space
+              exponentially.<br />
+              - <strong>Attack Speed:</strong> Modern GPUs and botnets can
+              significantly increase the rate of attempts, so always consider
+              realistic attack speeds.<br />
+              - <strong>Password Policies:</strong> Enforcing complex password
+              policies helps in increasing the search space, making brute force
+            </div>
+          </div>
+          <a href="/" class="Link">Back</a>
+
+          </div>
+
+    </div>
+</body>
+</html>
