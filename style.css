@@ -33,7 +33,7 @@ body{
     position: fixed;
     top: -100vh;
     left: 0;
-    background-color: #213f1b;
+    background-color: #333633;
     transition: all 0.5s;
 }
 #loader div{
@@ -42,7 +42,7 @@ body{
     justify-content: flex-end;
     flex-direction: column;
     height: 200px;
-    background-color:#4c8d3f;
+    background-color:#288d1b;
     width: 30%;
     min-width: 300px;
     border-radius: 15px;
