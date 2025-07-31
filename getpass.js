@@ -9,7 +9,7 @@ let str = ""
 evnt.addEventListener("click",()=>{
     loader.style.top = 0
     for (let index = 0; index < 20; index++) {
-        str += char[Math.floor(Math.random()*(char.length-1))]
+        str += char[Math.floor(Math.random()*(char.length-1))];
     }
 
     pass.textContent = str
